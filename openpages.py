@@ -7,4 +7,4 @@ while True:
          for i in urls:
              webbrowser.open_new(i)
      else:
-         print('Are you an idiot? ENTER 1')
+         print('ENTER 1')
