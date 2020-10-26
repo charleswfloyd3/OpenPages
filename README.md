@@ -1,2 +1,2 @@
-# openpages
-# Openpages is a project that I'm building in Python that opens all of the web pages I would like to open with a click of a button through the use of the webbroswer module and a   GUI(built using the tkinter module).
+# OpenPages
+# OpenpPges is a project that I am building using Python which opens all of the web pages I would like to use in a single chrome window with the click of a button. The modules I've used so far in the creation of OpenPages are webbroswer and tkinter(used for creating the GUI).
