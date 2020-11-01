@@ -17,7 +17,7 @@ class OpenPages:
         self.open.place(relx=0.5, rely=0.5, anchor=CENTER, relwidth=.5, relheight=.5)
         self.main_window.mainloop()
     def open(self):
-        urls = ['https://stackoverflow.com/', 'https://github.com/', 'https://smccd.instructure.com/courses/31456/assignments', 'https://www.chegg.com/reader/9781118890875/0/', 'https://javascript.info/']
+        urls = ['https://stackoverflow.com/', 'https://github.com/', 'https://smccd.instructure.com', 'https://www.chegg.com', 'https://javascript.info/']
         for i in urls:
             webbrowser.open_new(i)
 OpenPages()
