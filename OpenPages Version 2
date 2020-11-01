@@ -1,0 +1,23 @@
+import webbrowser
+from tkinter import *
+from tkinter.font import *
+class OpenPages:
+    'opens web pages'
+    def __init__(self):
+        "constructor that instantiates the GUI's root window, widgets, widget placement, and event processing loop"
+        self.main_window = Tk()
+        self.title = self.main_window.title("Open Chrome")
+        self.icon = self.main_window.iconbitmap(r'C:\Users\16502\Downloads\favicon.ico')
+        self.canvas = Canvas(self.main_window, height=50, width=300)
+        self.frame = Frame(self.main_window, bg='#0366fc')
+        self.font = Font(family = 'Courier', size = 20)
+        self.open = Button(self.main_window, text="OPEN", command= self.open, relief=RAISED, height=0, width=18,font=self.font)
+        self.canvas.pack()
+        self.frame.place(relheight=1, relwidth=1)
+        self.open.place(relx=0.5, rely=0.5, anchor=CENTER, relwidth=.5, relheight=.5)
+        self.main_window.mainloop()
+    def open(self):
+        urls = ['https://stackoverflow.com/', 'https://github.com/', 'https://smccd.instructure.com/courses/31456/assignments', 'https://www.chegg.com/reader/9781118890875/0/', 'https://javascript.info/']
+        for i in urls:
+            webbrowser.open_new(i)
+OpenPages()
